@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="OrderCheckout" rowHeight="198" id="KGk-i7-Jjw" customClass="OrderCheckoutTableViewCell" customModule="DeliveryApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="198"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="409" height="198"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtotal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdD-e3-62M">
+                        <rect key="frame" x="20" y="20" width="57.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$28.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSy-GR-Lmg">
+                        <rect key="frame" x="349" y="20" width="40" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AP2-3T-ZZ5">
+                        <rect key="frame" x="20" y="58" width="56" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1I-2u-aMK">
+                        <rect key="frame" x="358" y="58" width="31" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total (incl. VAT)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4BJ-P7-bwy">
+                        <rect key="frame" x="20" y="96" width="107" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$20.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMI-jk-w7c">
+                        <rect key="frame" x="349" y="96" width="40" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8b-J3-WTh">
+                        <rect key="frame" x="20" y="143" width="369" height="50"/>
+                        <color key="backgroundColor" red="0.1333333333" green="0.64313725489999995" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="tpV-uW-Ywb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="CHECKOUT ($20.10)"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="checkoutTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="EWJ-9p-BhJ"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4BJ-P7-bwy" firstAttribute="top" secondItem="AP2-3T-ZZ5" secondAttribute="bottom" constant="20" id="1Cm-X8-vxb"/>
+                    <constraint firstAttribute="trailing" secondItem="IMI-jk-w7c" secondAttribute="trailing" constant="20" id="762-Kf-eiy"/>
+                    <constraint firstItem="FdD-e3-62M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="BAg-QR-wcK"/>
+                    <constraint firstAttribute="trailing" secondItem="F1I-2u-aMK" secondAttribute="trailing" constant="20" id="CWM-tK-f1P"/>
+                    <constraint firstItem="AP2-3T-ZZ5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="OSI-UU-UkY"/>
+                    <constraint firstItem="I8b-J3-WTh" firstAttribute="top" secondItem="4BJ-P7-bwy" secondAttribute="bottom" constant="29" id="Qm2-Xo-8La"/>
+                    <constraint firstItem="I8b-J3-WTh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="QrQ-IG-43Y"/>
+                    <constraint firstItem="FdD-e3-62M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="WvS-WL-sT4"/>
+                    <constraint firstItem="4BJ-P7-bwy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="dna-Kq-tvd"/>
+                    <constraint firstAttribute="bottom" secondItem="I8b-J3-WTh" secondAttribute="bottom" constant="5" id="e8T-Mf-J8x"/>
+                    <constraint firstAttribute="trailing" secondItem="I8b-J3-WTh" secondAttribute="trailing" constant="20" id="qv9-RZ-xLW"/>
+                    <constraint firstItem="TSy-GR-Lmg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="s8p-kF-Sns"/>
+                    <constraint firstAttribute="trailing" secondItem="TSy-GR-Lmg" secondAttribute="trailing" constant="20" id="vjf-PV-BKa"/>
+                    <constraint firstItem="IMI-jk-w7c" firstAttribute="top" secondItem="F1I-2u-aMK" secondAttribute="bottom" constant="20" id="w8m-yg-BnG"/>
+                    <constraint firstItem="AP2-3T-ZZ5" firstAttribute="top" secondItem="FdD-e3-62M" secondAttribute="bottom" constant="20" id="z8X-M9-AtR"/>
+                    <constraint firstItem="F1I-2u-aMK" firstAttribute="top" secondItem="TSy-GR-Lmg" secondAttribute="bottom" constant="20" id="zAF-5J-Bh8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="checkoutButton" destination="I8b-J3-WTh" id="Xa9-Z0-SeS"/>
+                <outlet property="subTotalLabel" destination="TSy-GR-Lmg" id="4a3-P0-cQe"/>
+                <outlet property="totalLabel" destination="IMI-jk-w7c" id="Bq4-vb-5ZP"/>
+            </connections>
+            <point key="canvasLocation" x="152.89855072463769" y="123.21428571428571"/>
+        </tableViewCell>
+    </objects>
+</document>

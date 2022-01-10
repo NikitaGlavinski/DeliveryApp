@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTextField" customModule="DeliveryApp" customModuleProvider="target">
+            <connections>
+                <outlet property="label" destination="x63-Ss-Otf" id="62N-eY-qgd"/>
+                <outlet property="secureButton" destination="btf-RS-Z4V" id="d15-Kc-RJo"/>
+                <outlet property="textField" destination="yWg-7i-9NJ" id="pTt-qS-W8x"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="86"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yWg-7i-9NJ">
+                    <rect key="frame" x="25" y="0.0" width="336" height="86"/>
+                    <color key="tintColor" red="0.396078431372549" green="0.396078431372549" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x63-Ss-Otf">
+                    <rect key="frame" x="25" y="34" width="37.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.396078431372549" green="0.396078431372549" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btf-RS-Z4V">
+                    <rect key="frame" x="371" y="25.5" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="6O6-rd-RKF"/>
+                        <constraint firstAttribute="height" constant="35" id="nrc-Mn-Xen"/>
+                    </constraints>
+                    <color key="tintColor" red="0.396078431372549" green="0.396078431372549" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="eye.slash.fill" catalog="system"/>
+                    <connections>
+                        <action selector="changeSecure:" destination="-1" eventType="touchUpInside" id="5kY-Iy-bDc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.98431372549019602" green="0.98431372549019602" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="x63-Ss-Otf" firstAttribute="leading" secondItem="yWg-7i-9NJ" secondAttribute="leading" id="5r7-Za-pbe"/>
+                <constraint firstAttribute="trailing" secondItem="btf-RS-Z4V" secondAttribute="trailing" constant="8" id="8MY-C0-QG5"/>
+                <constraint firstItem="x63-Ss-Otf" firstAttribute="centerY" secondItem="yWg-7i-9NJ" secondAttribute="centerY" id="GaN-jT-Rz0"/>
+                <constraint firstItem="btf-RS-Z4V" firstAttribute="leading" secondItem="yWg-7i-9NJ" secondAttribute="trailing" constant="10" id="H7h-jc-XzN"/>
+                <constraint firstItem="btf-RS-Z4V" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="dzK-iS-JXL"/>
+                <constraint firstAttribute="bottom" secondItem="yWg-7i-9NJ" secondAttribute="bottom" id="iye-Z3-Q3m"/>
+                <constraint firstAttribute="top" secondItem="yWg-7i-9NJ" secondAttribute="top" id="kP9-iV-HO9"/>
+                <constraint firstItem="yWg-7i-9NJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="lk4-w9-ztU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="207" y="32"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="eye.slash.fill" catalog="system" width="128" height="82"/>
+    </resources>
+</document>
